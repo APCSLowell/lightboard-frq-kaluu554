@@ -36,14 +36,14 @@ public class LightBoard
         a++;
       }
     }
-   if(lights[r][c] == true && (a%2) == 0){
+   if(lights[row][col] == true && (a%2) == 0){
       return false;
    }
-    else if(lights[r][c] == false && (a%3)==0){
+    else if(lights[row][col] == false && (a%3)==0){
       return true;
     }
     else{
-      return lights[r][c];
+      return lights[row][col];
     }
  
   }
